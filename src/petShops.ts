@@ -49,7 +49,7 @@ function getChowChawgasPetShop():PetShop{
 }
 
 export const petShops:Dictionary<PetShop> = {
-  'Meu Canino Felix':getMeuCaninoFelixPetShop(),
+  'Meu Canino Feliz':getMeuCaninoFelixPetShop(),
   'Vai Rex':getVaiRexPetShop(),
   'ChowChawgas':getChowChawgasPetShop()
 }

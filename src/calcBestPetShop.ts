@@ -2,12 +2,11 @@ import { validInput } from "./validInput";
 import { petShops } from "./petShops";
 import { calcPetShopTotalPrice } from "./calcPetShopPrice";
 
-export function calcBestPetShop(args:any[]){
+export function calcBestPetShop(args:any[]):string{
   const [err,[date,smallDogs,bigDogs]]  = validInput(args);
 
   if(err){
-    console.log(err)
-    return;
+    return err;
   }
 
   let calculedPrice = Number.POSITIVE_INFINITY;
@@ -30,5 +29,5 @@ export function calcBestPetShop(args:any[]){
       selectedPetShopName = key;
     }
   }
-  console.log(`${selectedPetShopName} R$${calculedPrice}`)
+  return `${selectedPetShopName} R$${calculedPrice}`;
 }
