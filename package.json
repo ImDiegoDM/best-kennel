@@ -4,8 +4,9 @@
   "description": "",
   "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "buildAndWatch": "webpack --watch"
+    "test": "jest",
+    "buildAndWatch": "webpack --watch",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
